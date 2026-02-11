@@ -34,13 +34,26 @@
 }
 
 .black {
-
   outline: black 3px solid;
   background-color: #08274a;
 }
 
 .white {
-
   outline: black 3px solid;
   background-color: #e1e65e;
+}
+
+.selected {
+  background-color: rgba(236, 44, 44, 50);
+}
+
+.available {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.enemy {
+  background: darkgreen;
 }
