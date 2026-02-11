@@ -11,7 +11,7 @@ interface IBoard {
 const BoardComponent: FC<IBoard> = ({board, setBoard}) => {
     return (
         <div className="board">
-            {board.cells.map((row) => row.map(e => <CellComponent key={e.id} color={e.color}></CellComponent>)
+            {board.cells.map((row) => row.map(cell => <CellComponent key={cell.id} cell={cell}></CellComponent>)
             )}
         </div>
     );

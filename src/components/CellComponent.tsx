@@ -3,12 +3,14 @@ import {Colors} from "../models/Colors";
 import {Cell} from "../models/Cell";
 
 interface ICell {
-    color: Colors
+    cell: Cell;
 }
 
-const CellComponent: FC<ICell> = ({color}) => {
+const CellComponent: FC<ICell> = ({cell}) => {
     return (
-        <div className={['cell', color].join(' ')}/>
+        <div className={['cell', cell.color].join(' ')}>
+            {cell.figure?.logo && <img src={cell.figure.logo} alt=''/>}
+        </div>
     );
 };
 
