@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba390293-aabd-4ec8-83cf-867329d5e84c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BoardComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BoardComponent.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="ba390293-aabd-4ec8-83cf-867329d5e84c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,10 +52,10 @@
 }]]></component>
   <component name="RecapSpentCounter">
     <option name="endsOfQuotaMs" value="1773339382408" />
-    <option name="spentUsd" value="0.03826875" />
+    <option name="spentUsd" value="0.0750965" />
   </component>
   <component name="RecapUselessUpdatesCounter">
-    <option name="suspendCountdown" value="8" />
+    <option name="suspendCountdown" value="6" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -82,7 +77,7 @@
       <option name="presentableId" value="Default" />
       <updated>1770814285220</updated>
       <workItem from="1770814286364" duration="15260000" />
-      <workItem from="1770900812550" duration="7612000" />
+      <workItem from="1770900812550" duration="8706000" />
     </task>
     <servers />
   </component>
