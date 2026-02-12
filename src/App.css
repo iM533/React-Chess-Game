@@ -57,3 +57,13 @@
 .enemy {
   background: darkgreen;
 }
+
+.player {
+  display: flex;
+  justify-content: center;
+  padding: 3px;
+  outline: 3px solid black;
+  background-color: lightblue;
+  margin-bottom: 10px;
+  margin-top: 2px;
+}

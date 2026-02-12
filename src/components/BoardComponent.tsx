@@ -2,21 +2,25 @@ import React, {FC, useEffect, useState} from 'react';
 import {Board} from "../models/Board";
 import CellComponent from "./CellComponent";
 import {Cell} from "../models/Cell";
+import {Player} from "../models/Player";
 
 interface IBoard {
     board: Board,
     setBoard: (board: Board) => void;
+    currentPlayer: Player | null;
+    swapPlayer: () => void;
 }
 
 
-const BoardComponent: FC<IBoard> = ({board, setBoard}) => {
+const BoardComponent: FC<IBoard> = ({board, setBoard, currentPlayer, swapPlayer}) => {
     const [selectedCell, setSelectedCell] = useState<Cell | null>(null)
 
     function click(cell: Cell){
         if(selectedCell && selectedCell !== cell && selectedCell.figure?.canMove(cell)){
             selectedCell.moveFigure(cell);
+            swapPlayer();
             setSelectedCell(null);
-        }else if(cell.figure){
+        }else if(cell.figure && cell.figure.color === currentPlayer?.color) {
             setSelectedCell(cell);
         }
 
@@ -37,6 +41,8 @@ const BoardComponent: FC<IBoard> = ({board, setBoard}) => {
     }
 
     return (
+        <div>
+        <h3 className="player">Current Player: {currentPlayer?.color}</h3>
         <div className="board">
             {board.cells.map((row) => row.map(cell =>
                 <CellComponent
@@ -46,6 +52,7 @@ const BoardComponent: FC<IBoard> = ({board, setBoard}) => {
                 selected={cell.x === selectedCell?.x && cell.y === selectedCell?.y}
                 />)
             )}
+        </div>
         </div>
     );
 };
