@@ -57,7 +57,7 @@ private addRook () {
     new Rook(Colors.WHITE, this.getCell(7, 7))
 }
 
-private addKnigth () {
+private addKnight () {
     new Knight(Colors.BLACK, this.getCell(1,0))
     new Knight(Colors.BLACK, this.getCell(6,0))
     new Knight(Colors.WHITE, this.getCell(1, 7))
@@ -84,7 +84,7 @@ private addQueen () {
  public addFigures(){
      this.addPawn();
      this.addRook();
-     this.addKnigth();
+     this.addKnight();
      this.addBishop();
      this.addKing();
      this.addQueen();
