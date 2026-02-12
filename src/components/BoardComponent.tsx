@@ -27,18 +27,10 @@ const BoardComponent: FC<IBoard> = ({board, setBoard, currentPlayer, swapPlayer}
     }
 
     useEffect(() => {
-        highlightCells();
-    }, [selectedCell]);
-
-    function highlightCells () {
-        board.highlightCells(selectedCell)
-        updateBoard();
-    }
-
-    function updateBoard () {
+        board.highlightCells(selectedCell);
         const newBoard = board.getCopyBoard();
         setBoard(newBoard);
-    }
+    }, [board, selectedCell, setBoard]);
 
     return (
         <div>
